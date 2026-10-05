@@ -7,6 +7,24 @@
 - Herramientas necesarias: OpenSSL (`sudo apt install openssl`), Apache (`sudo apt-get install apache2`).
 - Repositorio GitHub de asignatura: puedes subir los programas desarrollados en el laboratorio.
 
+## ¿Qué es Apache?
+
+Apache HTTP Server es un servidor web de código abierto. Se encarga de recibir
+las peticiones de los navegadores y devolver páginas web, archivos u otros
+recursos mediante HTTP. En este laboratorio se utiliza Apache para publicar el
+sitio web y configurarlo posteriormente para aceptar conexiones HTTPS.
+
+## HTTP y HTTPS
+
+**HTTP** es un protocolo de comunicación sin cifrado. La información viaja en
+texto claro, por lo que un atacante podría interceptarla o modificarla.
+
+**HTTPS** es HTTP protegido mediante TLS. Cifra la comunicación, ayuda a
+garantizar que los datos no se modifican durante el envío y permite comprobar la
+identidad del servidor mediante un certificado digital. Por eso HTTPS es la
+opción segura para acceder a un sitio web, especialmente cuando se transmiten
+contraseñas o datos personales.
+
 ## Instalación de Apache
 
 Para crear un sitio web seguro primero hay que instalar un servidor web en nuestro servidor de Google Cloud, en este caso Apache. Para hacerlo, abre una conexión SSH al servidor y ejecuta:
